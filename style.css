@@ -1,0 +1,153 @@
+*{ box-sizing: border-box; }
+
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(175, 175, 175);
+}
+
+/*Cabeçalho*/
+.cabecalho{
+    position: -webkit-sticky;
+    position: sticky;
+    background: #333;
+    border-bottom: solid 5px #4faddb;
+    height: 80px;
+    box-sizing: content-box;
+}
+
+.logo{
+    display: inline-block;
+    height: 80px;
+    width: 65px;
+    padding: 15px;
+}
+
+.logo img{ height: 100%; }
+
+.menu-toggle{
+    float: right;
+    color: #eee;
+    background-color: #555;
+    border: solid 1px #777;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 20px 15px;
+}
+
+.menu{
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
+}
+
+menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{ display: inline-block; }
+
+.cabecalho a{
+    text-decoration: none;
+    color: rgb(175, 175, 175);;
+    font-size: 1.1em;
+}
+
+.menu a{ padding: 10px; }
+
+.autenticacao{
+    float: right;
+    height: 80px;
+    padding: 25px;
+}
+
+.menu a:hover,
+.menu a.selected{
+    background-color: #4faddb;
+    color: #000;
+}
+
+.botao{
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 10px;
+}
+
+.destaque{
+    background: #f50a31;
+    color: #fff;
+}
+
+/*Inicio*/
+#inicio{
+    text-align: center;
+    font-size: 1.0em;
+    font-weight: bolder;
+}
+
+/*Titulos*/
+#nossos-produtos h1,
+#sobre h1,
+#contato h1{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bolder;
+    padding-top: 50px;
+}
+
+/*Produtos*/
+
+.produtos{
+    display: inline-block;
+    height: 250px;
+    width: 225px;
+    padding: 30px;
+}
+
+.produtos span{
+    text-align: center;
+    font-size: 1em;
+}
+
+.produtos img{height: 100%;}
+
+/*Sobre e Contatos*/
+#sobre p,
+#contato p{
+    padding-left: 30px;
+    font-size: 1em;
+}
+
+/*Rodapé*/
+footer{
+    width: 100%;
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: #777;
+    font-size: 0.8em;
+}
+
+.rodape{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media(min-width: 679px){
+    .menu-toggle{ display: none; }
+}
+
+@media(max-width: 680px){
+    .menu{ display: none; }
+}
+
+@media(max-width: 910px){
+    .autenticacao{ display: none; }
+}
